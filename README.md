@@ -3,7 +3,7 @@
 # Inspired by: [Music Lyrics API](https://www.youtube.com/watch?v=_03CKMuvIxU)
 
 # Project Overview: 
-<b>This project aims to create a simple webapp using *streamlit* and the *requests api* to search and show music lyrics</b>.
+<b>This project aims to create a simple *Streamlit web application* that allows users to input a band name and a song name, and then fetches and displays the lyrics using the *lyrics.ovh API*</b>.
 
 # Code and Resources used:
 * **python = "^3.12"**
