@@ -12,9 +12,10 @@
 * **pandas = "^2.2.2"**
 
 # How to use
+* Just acess https://musiclyrics.streamlit.app/ and try it!! OR;
 * Create a virtual enviroment using poetry;
 * Install the libraries by running ```poetry install```;
-* Run it with ```streamlit app.py```
+* Run it with ```streamlit run app.py```
 
 # Developed by: 
   * [Felipe Roll - LinkedIn](https://www.linkedin.com/in/felipe-roll)
