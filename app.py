@@ -1,11 +1,33 @@
 import requests
 import streamlit as st
+import webbrowser
+import time
+import pyautogui
+import pyperclip
+
 
 st.title("Letras de Músicas")
 
 # Input fields with validation
-banda = st.text_input("Digite o nome da banda: ", key="banda")
-musica = st.text_input("Digite o nome da música: ", key="musica")
+banda = input("Digite o nome da banda: ")
+musica = input("Digite o nome da música: ")
+
+webbrowser.open("https://musiclyrics.streamlit.app/")
+time.sleep(5)
+
+pyautogui.PAUSE = 1
+
+pyautogui.click(x=-928, y=474)
+
+pyperclip.copy(banda)
+pyautogui.hotkey("ctrl", "v")
+pyautogui.hotkey("tab")
+
+pyperclip.copy(musica)
+pyautogui.hotkey("ctrl", "v")
+
+pyautogui.click(x=-1016, y=617)
+
 
 # Function to fetch lyrics with error handling
 @st.cache_data
